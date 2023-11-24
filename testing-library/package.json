@@ -1,0 +1,21 @@
+{
+    "name": "testing-library",
+    "version": "1.0.0",
+    "description": "",
+    "main": "lib/app.js",
+    "author": "",
+    "license": "ISC",
+    "scripts": {
+        "start": "node lib/app.js",
+        "compile": "tsc -b",
+        "compile:watch": "tsc -b --watch",
+        "test:basic": "node lib/tests/basic/stats.test.js",
+        "test:intermediate": "node lib/tests/intermediate/stats.test.js",
+        "test:advance": "node lib/tests/advance/stats.test.js",
+        "check-updates": "ncu -u"
+    },
+    "devDependencies": {
+        "npm-check-updates": "16.7.10",
+        "typescript": "4.9.5"
+    }
+}
