@@ -4,7 +4,7 @@
     "description": "",
     "main": "lib/app.js",
     "author": "",
-    "license": "ISC",
+    "license": "MIT",
     "scripts": {
         "start": "node lib/app.js",
         "compile": "tsc -b",
