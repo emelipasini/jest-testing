@@ -26,3 +26,13 @@ To run only pascal case converter tests:
 ```bash
 npm test tests/pascal-case.test.ts
 ```
+
+## Fizz Buzz
+
+A simple function that receives a number and returns "fizz" if it's divisible by 3, "buzz" if it's divisible by 5 and "fizzbuzz" if it's divisible by both.
+
+To run only fizz buzz tests:
+
+```bash
+npm test tests/fizz-buzz.test.ts
+```
