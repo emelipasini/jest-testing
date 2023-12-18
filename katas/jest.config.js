@@ -4,6 +4,7 @@ export default {
     verbose: true,
     collectCoverage: true,
     coverageDirectory: "./coverage",
+    collectCoverageFrom: ["./src/**"],
     coverageThreshold: {
         global: {
             statements: 80,
