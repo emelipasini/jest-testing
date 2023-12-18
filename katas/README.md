@@ -46,3 +46,13 @@ To run only disease filter tests:
 ```bash
 npm test -j tests/disease-filter
 ```
+
+### Custom functions
+
+In `tests/custom-functions/` there are examples of how extend the jest matchers to create custom functions.
+
+To run only custom functions tests:
+
+```bash
+npm test tests/custom-functions
+```
