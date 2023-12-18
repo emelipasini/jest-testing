@@ -1,6 +1,6 @@
 # Katas
 
-## Configuration
+#### Configuration
 
 ```bash
 cd katas
@@ -9,7 +9,7 @@ npm install
 npm run compile
 ```
 
-## Run all tests
+#### Run all tests
 
 ```bash
 npm test
@@ -35,4 +35,14 @@ To run only fizz buzz tests:
 
 ```bash
 npm test tests/fizz-buzz.test.ts
+```
+
+## Disease Filter
+
+A class that has a method to get the filtered cases, it is just an example to apply factories and builders in the tests.
+
+To run only disease filter tests:
+
+```bash
+npm test -j tests/disease-filter
 ```
