@@ -1,3 +1,5 @@
+import { describe, it, expect } from "@jest/globals";
+
 import fizzBuzz from "../src/fizz-buzz";
 
 describe("Fizz buzz suite", () => {

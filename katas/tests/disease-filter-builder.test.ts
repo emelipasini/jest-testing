@@ -1,3 +1,5 @@
+import { describe, it, expect } from "@jest/globals";
+
 import { Case, Diagnosis, DiseaseFilter } from "../src/disease-filter";
 
 describe("Disease filter with builders", () => {

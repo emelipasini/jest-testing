@@ -1,3 +1,5 @@
+import { describe, it, expect } from "@jest/globals";
+
 import convertToPascalCase from "../src/pascal-case";
 
 describe("Pascal Case converter", () => {
