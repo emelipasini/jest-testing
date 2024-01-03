@@ -47,6 +47,16 @@ To run only disease filter tests:
 npm test -j tests/disease-filter
 ```
 
+## Password Validator
+
+A function that validates a password, it must have at least 8 characters, an uppercase letter, a lowercase letter, a number and a special character.
+
+To run only password validator tests:
+
+```bash
+npm test tests/password-validator.test.ts
+```
+
 ### Custom functions
 
 In `tests/custom-functions/` there are examples of how extend the jest matchers to create custom functions.
