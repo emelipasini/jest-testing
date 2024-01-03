@@ -24,4 +24,9 @@ describe("Password validator", () => {
         const result = passwordValidator("$ValidPass1");
         expect(result).toBe(true);
     });
+
+    it("should return false if the length is less than 8 characters", () => {
+        const result = passwordValidator("$Inval1");
+        expect(result).toBe("Error: The password must have at least 8 characters");
+    });
 });
