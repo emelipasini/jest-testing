@@ -34,4 +34,9 @@ describe("Password validator", () => {
         const result = passwordValidator("$invalid1");
         expect(result).toBe("Error: The password must have at least 1 uppercase letter");
     });
+
+    it("should return error if there is no lowercase letter", () => {
+        const result = passwordValidator("$INVALID1");
+        expect(result).toBe("Error: The password must have at least 1 lowercase letter");
+    });
 });
