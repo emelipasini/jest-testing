@@ -3,6 +3,7 @@ export default function passwordValidator(password: string) {
     if (!hasUppercaseLetter(password)) return "Error: The password must have at least 1 uppercase letter";
     if (!hasLowercaseLetter(password)) return "Error: The password must have at least 1 lowercase letter";
     if (!hasNumber(password)) return "Error: The password must have at least 1 number";
+    if (!hasSpecialCharacter(password)) return "Error: The password must have at least 1 special character";
     return true;
 }
 
@@ -16,4 +17,8 @@ function hasLowercaseLetter(password: string) {
 
 function hasNumber(password: string) {
     return /.*[0-9].*/.test(password);
+}
+
+function hasSpecialCharacter(password: string) {
+    return /.*[!-\/].*/.test(password);
 }
