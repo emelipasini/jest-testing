@@ -39,4 +39,9 @@ describe("Password validator", () => {
         const result = passwordValidator("$INVALID1");
         expect(result).toBe("Error: The password must have at least 1 lowercase letter");
     });
+
+    it("should return error if there is no number", () => {
+        const result = passwordValidator("$Invalid");
+        expect(result).toBe("Error: The password must have at least 1 number");
+    });
 });
