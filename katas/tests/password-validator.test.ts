@@ -25,8 +25,13 @@ describe("Password validator", () => {
         expect(result).toBe(true);
     });
 
-    it("should return false if the length is less than 8 characters", () => {
+    it("should return error if the length is less than 8 characters", () => {
         const result = passwordValidator("$Inval1");
         expect(result).toBe("Error: The password must have at least 8 characters");
+    });
+
+    it("should return error if there is no uppercase letter", () => {
+        const result = passwordValidator("$invalid1");
+        expect(result).toBe("Error: The password must have at least 1 uppercase letter");
     });
 });
